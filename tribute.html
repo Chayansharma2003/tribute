@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tribute Page to Linus Trovslds</title>
-        <style>
+    <style>
         body{
             background-color: ivory;
         }
@@ -12,24 +12,51 @@
             scroll-behavior: smooth;
         }
         #d1{
-            background-color: rgb(186, 173, 35);
+           
             border-radius: 150px;
             width: 30%;
             height: 40px;
             text-align: center;
         }
+        h1{
+            color: rgb(12, 5, 5);
+        }
+        #d1:hover{
+            background-color: rgb(8, 246, 254);
+            /* mouse going and clicking animation */
+            transition: all .3s ease-in-out;
+            box-shadow: 10px 5px 5px 5px rgba(1, 51, 65, 0.37);
+            
+        }
+        a{
+            text-decoration: none;/*remove underline from link */
+        }
+        h1:hover{
+            color: rgba(212, 7, 79, 0.716);
+        }
+        #img{
+            padding: 20px;
+            box-shadow: inset 0 -3em 3em rgba(234, 14, 14, 0.349), 0 0 0 2px rgb(229, 221, 236),0.3em 0.3em 1em rgba(17, 17, 17, 0.503);
+        }
     </style>
 </head>
 <body>
-    <div id="d1"><h1>Linus Trovslds</h1></div>
+   <header>
+    <div id="d1">
+        <a href="https://en.wikipedia.org/wiki/Linus_Torvalds"><h1>Linus Trovslds</h1></a>    
+    </div>
     <p>The Creator of Linux</p>
+   </header>
     <a href="#r1">Go to Resources</a>
     <figure>
-        <img src="img/Linus_Bhaya.jpg" alt="Linus Trovslds">
+        <img id="img" src="img/Linus_Bhaya.jpg" alt="Linus Trovslds">
         <figcaption>A Photograph of Linus Trovslds</figcaption>
     </figure>
+    <aside>
+        <!-- <div style="margin-top: -20%; float: right;"><iframe src="https://www.youtube.com/watch?v=o8NPllzkFhE&ab_channel=TED" frameborder="0" height="200" width="400"  ></iframe></div> -->
+    </aside>
     <h2>Biography</h2>
-    <p>Linus Torvalds is a Finnish-American software engineer who is the creator and principal developer of the Linux kernel, which is the kernel for a number of operating systems. He also created the version control system Git. Torvalds was born on December 28, 1969 in Helsinki, Finland. He studied computer science at the University of Helsinki, and he developed the Linux kernel as a student project in 1991. Since then, the Linux kernel has become one of the most widely used kernels in the world, powering everything from smartphones to supercomputers.
+    <p><b>Linus Torvalds</b> is a Finnish-American software engineer who is the creator and principal developer of the Linux kernel, which is the kernel for a number of operating systems. He also created the version control system Git. Torvalds was born on December 28, 1969 in Helsinki, Finland. He studied computer science at the University of Helsinki, and he developed the Linux kernel as a student project in 1991. Since then, the Linux kernel has become one of the most widely used kernels in the world, powering everything from smartphones to supercomputers.
     </p>
     <h2>Achievement</h2>
     <ul>
@@ -50,11 +77,13 @@
         <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank">The Famious People</a></cite>
     </blockquote>
     <h2 id="r1">Resources</h2>
-    <p style="color: brown;">Learn more about Linus Torvalds and his work:</p>
+    <p>Learn more about Linus Torvalds and his work:</p>
     <ul>
-    <li><a href="https://en.wikipedia.org/wiki/Linus_Torvalds">Wikipedia page on Linus Torvalds</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds's personal website</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Linus_Torvalds">The Linux Kernel Archives</a></li>
+    <footer>
+        <li><a href="https://en.wikipedia.org/wiki/Linus_Torvalds">Wikipedia page on Linus Torvalds</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds's personal website</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Linus_Torvalds">The Linux Kernel Archives</a></li>
+    </footer>
 </ul>
 </body>
 </html>
